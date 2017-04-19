@@ -66,7 +66,7 @@ class LSystem:
 
         return state
 
-    def draw(self, filename, state, orientation, color, penwidth):
+    def draw(self, filename, state, orientation=0, color=[0,0,0], penwidth=1):
         
         turtle = t.PSTurtle(0, 0, orientation)
         turtle.penColor = color
