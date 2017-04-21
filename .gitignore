@@ -4,6 +4,7 @@
 
 # Python
 *.pyc
+*._pycache_
 
 # PostScript
 *.ps
