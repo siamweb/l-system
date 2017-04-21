@@ -1,6 +1,8 @@
 import math
 
 class PSTurtle:
+    """ Generates turtle graphcis
+    """
 
     colorline = ("\n/colorline {\n"
             "newpath\n"
@@ -13,6 +15,12 @@ class PSTurtle:
 
 
     def __init__(self, x, y, o):
+        """ Initialize the turtle
+        input:
+            x : x coordinate
+            y : y coordinate
+            o : orientation
+        """
 
         # turtle state
         self.xPos = x
@@ -34,6 +42,8 @@ class PSTurtle:
         self.ps = ""
 
     def updateBoundaries(self):
+        """ Update boundaries of the output file
+        """
         if self.xPos < self.xMin:
             self.xMin = self.xPos
 
@@ -47,7 +57,12 @@ class PSTurtle:
             self.yMax = self.yPos
 
     def place(self, x, y, o):
-
+        """ Place the turtle
+        input:
+            x : x coordinate
+            y : y coordinate
+            o : orientation
+        """
         if self.ps != "":
             self.ps += "\nstroke"
         
@@ -58,9 +73,13 @@ class PSTurtle:
         self.orientation = o
 
     def turn(self, o):
+        """ Turn the turtle
+        """
         self.orientation += o
 
     def move(self, l):
+        """ Move the turtle
+        """
         o = self.orientation * math.pi / 180
 
         newXPos = self.xPos + l * math.cos(o)
@@ -79,6 +98,8 @@ class PSTurtle:
 
 
     def write(self, filename):
+        """ Write to file
+        """
         f = open(filename, 'w')
         f.write("%!PS-Adobe-3.0 EPSF-3.0")
 
