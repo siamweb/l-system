@@ -119,13 +119,13 @@ class LSystem:
 
         return state
 
-    def draw(self, filename, state, orientation=0, color=[0,0,0], penwidth=1):
+    def draw(self, filename, state, orientation=0, color=[0,0,0], width=1):
         """ Render state of L-System to PostScript 
         """
         
         turtle = psturtle.PSTurtle(0, 0, orientation)
         turtle.penColor = color
-        turtle.penWidth = penwidth
+        turtle.penWidth = width
 
         for c in state:
             #check if there is a draw rule for c
