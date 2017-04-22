@@ -3,7 +3,7 @@
 Program for constructing [L-systems](https://en.wikipedia.org/wiki/L-system) and rendering their corresponding geometric structures through [turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics).
 
 ## L-systems
-An L-system is a rewriting system and a type of formal grammar. An L-system consits of the following entities
+An L-system is a rewriting system and a type of formal grammar. An L-system consists of the following entities
 
 * An alphabet of symbols that can be used to create strings.
 
@@ -35,7 +35,7 @@ Define an L-system with the following properties
 
 * The mechanism for translating a string into a geometric structure can be explained as follows:
   
-  Given a string containing the symbols in the alphabet. Iterate of the string of symbols and execute the following operations (imagine yourself holding down a pencil on a paper)
+  Given a string containing the symbols in the alphabet. Iterate over the string of symbols and execute the following operations (imagine yourself holding down a pencil on a paper)
 
     * F: draw a straight line
 
@@ -54,7 +54,7 @@ F+F-F-F+F &rarr; F+F-F-F+F+F+F-F-F+F-F+F-F-F+F-F+F-F-F+F+F+F-F-F+F
 
 and we could go on like this reapplying the production rules.
 
-For each string there exists a corresponding geometric structure which can be generated through the rules above. Below you can see these structures after applying the production rules 0, 1, 2 and 3 times.
+For each string there exists a corresponding geometric structure which can be generated through the mechanism descrived above. Below you can see these structures after applying the production rules 0, 1, 2 and 3 times.
 
 ![koch0](images/koch0.png)
 ![koch1](images/koch1.png)
