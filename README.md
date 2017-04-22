@@ -17,6 +17,14 @@ L-systems were origninally used for modelling plant cells and plant development.
 
 L-systems can be used for generating geometric structures such as self-similar fractals, e.g. [iterated function systems](https://en.wikipedia.org/wiki/Iterated_function_system).
 
+## Samples
+![koch](images/samples/koch.png)
+![sierpinski](images/samples/sierpinski.png)
+![flowsnake](images/samples/flow.png)
+![plant](images/samples/plant.png)
+
+
+
 ## Example: Koch curve
 
 Define an L-system with the following properties
@@ -56,10 +64,10 @@ and we could go on like this reapplying the production rules.
 
 For each string there exists a corresponding geometric structure which can be generated through the mechanism descrived above. Below you can see these structures after applying the production rules 0, 1, 2 and 3 times.
 
-![koch0](images/koch0.png)
-![koch1](images/koch1.png)
-![koch2](images/koch2.png)
-![koch3](images/koch3.png)
+![koch0](images/koch/koch0.png)
+![koch1](images/koch/koch1.png)
+![koch2](images/koch/koch2.png)
+![koch3](images/koch/koch3.png)
 
 These images were generated with the following commands
 
