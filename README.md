@@ -89,8 +89,8 @@ print(koch0)
 print(koch1)
 
 # Render the structures
-koch.draw("koch0.ps", koch0, width=1)
-koch.draw("koch1.ps", koch1, width=1)
-koch.draw("koch2.ps", koch2, width=1)
-koch.draw("koch3.ps", koch3, width=1)
+koch.draw("koch0.ps", koch0)
+koch.draw("koch1.ps", koch1)
+koch.draw("koch2.ps", koch2)
+koch.draw("koch3.ps", koch3)
 ```
